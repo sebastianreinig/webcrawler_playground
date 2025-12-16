@@ -114,6 +114,7 @@ This project uses several open-source libraries. Please review their licenses if
 - Respect `robots.txt` files.
 - Do not overwhelm servers with excessive requests (use the `Timeout` and `Max Pages` features).
 - The authors are not responsible for any misuse of this tool.
+- The code is vibecoded.
 
 ## 📦 Export
 Once crawling is complete, export your dataset including all metadata and content for external analysis.
