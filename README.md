@@ -100,8 +100,8 @@ This project includes a **GitHub Actions** workflow that automatically builds an
 
 - **Registry**: GitHub Container Registry (`ghcr.io`)
 - **Images**:
-    - `ghcr.io/<your-username>/webcrawler_playground/backend:latest`
-    - `ghcr.io/<your-username>/webcrawler_playground/frontend:latest`
+    - `ghcr.io/sebastianreinig/webcrawler_playground/backend:latest`
+    - `ghcr.io/sebastianreinig/webcrawler_playground/frontend:latest`
 
 ## ⚖️ License & Legal
 
