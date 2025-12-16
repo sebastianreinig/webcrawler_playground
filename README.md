@@ -5,6 +5,15 @@ A powerful, customizable, and containerized web spider designed for testing and 
 <img width="1010" height="869" alt="image" src="https://github.com/user-attachments/assets/c5be68d2-f06b-4395-b3a1-5fbec250d857" />
 
 
+## 📚 Table of Contents
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [How to Run](#-how-to-run)
+  - [With Docker (Recommended)](#with-docker-recommended)
+  - [Local Setup (No Docker)](#local-setup-no-docker)
+- [Usage](#-usage)
+- [License](#-license--legal)
+
 ## 🚀 Features
 
 - **Recursive Crawling**: Spider engine capable of BFS/DFS traversal with configurable depth.
@@ -13,6 +22,7 @@ A powerful, customizable, and containerized web spider designed for testing and 
     - **Max Pages**: Hard limit on total pages to scrape.
     - **Custom Selectors**: Define CSS selectors for specific link following and content extraction.
     - **Domain Control**: Option to restrict crawling to the original domain.
+    - **Regex Filters**: Include/Exclude URLs based on regex patterns.
 - **Real-Time Visualization**: Live progress updates, depth tracking, and status logs via WebSockets.
 - **High Performance**: Built on **Playwright** (Async) and **FastAPI** for concurrent processing.
 - **Modern UI**: Polished React interface for easy configuration and data inspection.
@@ -33,6 +43,57 @@ A powerful, customizable, and containerized web spider designed for testing and 
 
 ### Infrastructure
 - **Containerization**: Docker & Docker Compose
+
+## 🏃‍♂️ How to Run
+
+### With Docker (Recommended)
+This is the easiest way to get started.
+
+1.  **Clone** the repository.
+2.  Open a terminal in the project root.
+3.  Run the following command:
+
+    ```bash
+    docker-compose up --build
+    ```
+
+4.  Open your browser at **[http://localhost:5173](http://localhost:5173)**.
+
+### Local Setup (No Docker)
+If you prefer running it locally or don't have Docker installed.
+
+#### Backend
+1. Navigate to the `backend` directory.
+2. Create and activate a Virtual Environment:
+   ```bash
+   python -m venv venv
+   # Windows
+   venv\Scripts\activate
+   # Mac/Linux
+   source venv/bin/activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   playwright install
+   ```
+4. Start the server:
+   ```bash
+   uvicorn main:app --reload
+   ```
+   *Server will run on http://localhost:8000*
+
+#### Frontend
+1. Open a new terminal and navigate to the `frontend` directory.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser at **[http://localhost:5173](http://localhost:5173)**.
 
 ## ⚖️ License & Legal
 
