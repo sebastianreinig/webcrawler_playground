@@ -2,6 +2,9 @@
 
 A powerful, customizable, and containerized web spider designed for testing and data extraction.
 
+<img width="1010" height="869" alt="image" src="https://github.com/user-attachments/assets/c5be68d2-f06b-4395-b3a1-5fbec250d857" />
+
+
 ## 🚀 Features
 
 - **Recursive Crawling**: Spider engine capable of BFS/DFS traversal with configurable depth.
