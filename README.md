@@ -95,6 +95,14 @@ If you prefer running it locally or don't have Docker installed.
    ```
 4. Open your browser at **[http://localhost:5173](http://localhost:5173)**.
 
+### CI/CD (GitHub Actions)
+This project includes a **GitHub Actions** workflow that automatically builds and creates Docker images for both the frontend and backend whenever you push to `master` or `main`.
+
+- **Registry**: GitHub Container Registry (`ghcr.io`)
+- **Images**:
+    - `ghcr.io/<your-username>/webcrawler_playground/backend:latest`
+    - `ghcr.io/<your-username>/webcrawler_playground/frontend:latest`
+
 ## ⚖️ License & Legal
 
 ### MIT License
